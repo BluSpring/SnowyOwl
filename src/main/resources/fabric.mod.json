@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "snowyowl",
+  "version": "${version}",
+  "name": "SnowyOwl",
+  "description": "Snowy Owl for Zuite",
+  "authors": [
+    "BluSpring"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/snowyowl/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.bluspring.snowyowl.SnowyOwl"
+    ]
+  },
+  "mixins": [
+    "SnowyOwl.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "fabric-language-kotlin": ">=1.8.4+kotlin.1.7.20",
+    "pehkui": "*"
+  }
+}

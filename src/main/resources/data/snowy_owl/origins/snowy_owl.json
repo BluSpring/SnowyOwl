@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "origins:elytra",
+    "snowy_owl:launch",
+    "origins:aerial_combatant",
+    "snowy_owl:not_so_picky",
+    "snowy_owl:insulation",
+    "snowy_owl:snowshoes",
+    "snowy_owl:dive_bomb",
+    "snowy_owl:dive_bomb2",
+    "snowy_owl:talons",
+
+    "snowy_owl:owl_sized",
+
+    "snowy_owl:diurnal",
+    "snowy_owl:stuffy",
+    "snowy_owl:vulnerable"
+  ],
+  "icon": "minecraft:snowball",
+  "order": 4,
+  "impact": 1,
+  "name": "Snowy Owl",
+  "description": "Snowy owl."
+}
