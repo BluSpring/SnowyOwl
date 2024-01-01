@@ -1,7 +1,7 @@
 plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'fabric-loom' version '1.4-SNAPSHOT'
     id 'maven-publish'
-    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
 }
 
 version = project.mod_version
@@ -15,7 +15,7 @@ repositories {
     // for more information about repositories.
     maven {
         name = "Ladysnake Libs"
-        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+        url = 'https://maven.ladysnake.org/releases'
     }
     maven {
         url = 'https://maven.cafeteria.dev'
@@ -48,12 +48,15 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "net.fabricmc:fabric-language-kotlin:1.8.4+kotlin.1.7.20"
+    modImplementation "net.fabricmc:fabric-language-kotlin:1.10.17+kotlin.1.9.22"
 
-    modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+    modApi "com.github.apace100:origins-fabric:${project.origins_version}"
+    modApi "com.github.apace100:apoli:${project.apoli_version}"
     modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
         exclude group: "net.fabricmc.fabric-api"
     })
+
+    include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.3.2")))
 }
 
 processResources {
