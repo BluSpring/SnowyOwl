@@ -20,10 +20,10 @@
     "SnowyOwl.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.0",
+    "fabricloader": ">=0.15.0",
     "fabric": "*",
-    "minecraft": "1.19.2",
-    "fabric-language-kotlin": ">=1.8.4+kotlin.1.7.20",
+    "minecraft": ">=1.20",
+    "fabric-language-kotlin": ">=1.10.17+kotlin.1.9.22",
     "pehkui": "*"
   }
 }
